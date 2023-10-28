@@ -1,0 +1,20 @@
+# Source database configuration
+spring:
+  datasource:
+    source:
+      jdbc-url: jdbc:sqlserver://localhost:1433;database=OldDataBase;encrypt=true;trustServerCertificate=true;useUnicode=true;characterEncoding=UTF-8;
+      username: admin
+      password: admin123
+      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      hikari:
+        connection-timeout: 30000
+        maximum-pool-size: 10
+    # Destination database configuration
+    destination:
+      jdbc-url: jdbc:sqlserver://localhost:1433;database=NewDataBase;encrypt=true;trustServerCertificate=true;useUnicode=true;characterEncoding=UTF-8;
+      username: admin
+      password: admin123
+      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      hikari:
+        connection-timeout: 30000
+        maximum-pool-size: 10
