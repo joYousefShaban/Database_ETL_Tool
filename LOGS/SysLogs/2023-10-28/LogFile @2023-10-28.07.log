@@ -1,0 +1,1160 @@
+2023.10:28:07:32:53.098 [main] INFO  com.example.demo.Main - Starting Main using Java 18.0.2 with PID 12696 (D:\Others\Desktop\PProjects\Java Spring Projects\Data ETL Tool\target\classes started by Admin in D:\Others\Desktop\PProjects\Java Spring Projects\Data ETL Tool)
+2023.10:28:07:32:53.099 [main] DEBUG com.example.demo.Main - Running with Spring Boot v3.1.4, Spring v6.0.12
+2023.10:28:07:32:53.100 [main] INFO  com.example.demo.Main - No active profile set, falling back to 1 default profile: "default"
+2023.10:28:07:32:53.101 [main] DEBUG org.springframework.boot.SpringApplication - Loading source class com.example.demo.Main
+2023.10:28:07:32:53.132 [main] DEBUG org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@18518ccf
+2023.10:28:07:32:53.141 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2023.10:28:07:32:53.150 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2023.10:28:07:32:53.181 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\Others\Desktop\PProjects\Java Spring Projects\Data ETL Tool\target\classes\com\example\demo\configurations\HikariDataSourceConfig.class]
+2023.10:28:07:32:53.182 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\Others\Desktop\PProjects\Java Spring Projects\Data ETL Tool\target\classes\com\example\demo\configurations\JdbcTemplateConfig.class]
+2023.10:28:07:32:53.183 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\Others\Desktop\PProjects\Java Spring Projects\Data ETL Tool\target\classes\com\example\demo\impl\HomePageDialog.class]
+2023.10:28:07:32:53.183 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\Others\Desktop\PProjects\Java Spring Projects\Data ETL Tool\target\classes\com\example\demo\impl\Initializer.class]
+2023.10:28:07:32:53.185 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\Others\Desktop\PProjects\Java Spring Projects\Data ETL Tool\target\classes\com\example\demo\services\configurationReader\ConfigurationReaderService.class]
+2023.10:28:07:32:53.185 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\Others\Desktop\PProjects\Java Spring Projects\Data ETL Tool\target\classes\com\example\demo\services\etl\ETLHelper.class]
+2023.10:28:07:32:53.187 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\Others\Desktop\PProjects\Java Spring Projects\Data ETL Tool\target\classes\com\example\demo\services\etl\ETLService.class]
+2023.10:28:07:32:53.188 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\Others\Desktop\PProjects\Java Spring Projects\Data ETL Tool\target\classes\com\example\demo\services\logging\LoggingService.class]
+2023.10:28:07:32:53.445 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+2023.10:28:07:32:53.450 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.sql.init.dependency.DatabaseInitializationDependencyConfigurer$DependsOnDatabaseInitializationPostProcessor'
+2023.10:28:07:32:53.453 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2023.10:28:07:32:53.454 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'forceAutoProxyCreatorToUseClassProxying'
+2023.10:28:07:32:53.454 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2023.10:28:07:32:53.457 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2023.10:28:07:32:53.458 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2023.10:28:07:32:53.460 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+2023.10:28:07:32:53.460 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinder'
+2023.10:28:07:32:53.461 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'persistenceExceptionTranslationPostProcessor'
+2023.10:28:07:32:53.462 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'persistenceExceptionTranslationPostProcessor' via factory method to bean named 'environment'
+2023.10:28:07:32:53.468 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2023.10:28:07:32:53.474 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'main'
+2023.10:28:07:32:53.476 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'hikariDataSourceConfig'
+2023.10:28:07:32:53.477 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcTemplateConfig'
+2023.10:28:07:32:53.477 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'homePageDialog'
+2023.10:28:07:32:53.479 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'homePageDialog' via constructor to bean named 'environment'
+2023.10:28:07:32:53.480 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'initializer'
+2023.10:28:07:32:53.481 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'configurationReaderService'
+2023.10:28:07:32:53.482 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'ETLHelper'
+2023.10:28:07:32:53.484 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'ETLService'
+2023.10:28:07:32:53.486 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sourceJdbcTemplate'
+2023.10:28:07:32:53.486 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sourceHikariDataSource'
+2023.10:28:07:32:53.490 [main] INFO  com.example.demo.configurations.HikariDataSourceConfig - Process of establishing the following HikariDataSource connection was successful: HikariDataSource (null)
+2023.10:28:07:32:53.492 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.context.properties.BoundConfigurationProperties'
+2023.10:28:07:32:53.532 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class com.microsoft.sqlserver.jdbc.SQLServerDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@4d7e1886
+2023.10:28:07:32:53.547 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'sourceJdbcTemplate' via factory method to bean named 'sourceHikariDataSource'
+2023.10:28:07:32:53.549 [main] INFO  com.example.demo.configurations.JdbcTemplateConfig - Process of establishing the following JdbcTemplate was successful: org.springframework.jdbc.core.JdbcTemplate@64f16277
+2023.10:28:07:32:53.552 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'destinationJdbcTemplate'
+2023.10:28:07:32:53.553 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'destinationHikariDataSource'
+2023.10:28:07:32:53.553 [main] INFO  com.example.demo.configurations.HikariDataSourceConfig - Process of establishing the following HikariDataSource connection was successful: HikariDataSource (null)
+2023.10:28:07:32:53.556 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class com.microsoft.sqlserver.jdbc.SQLServerDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@4d7e1886
+2023.10:28:07:32:53.557 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'destinationJdbcTemplate' via factory method to bean named 'destinationHikariDataSource'
+2023.10:28:07:32:53.558 [main] INFO  com.example.demo.configurations.JdbcTemplateConfig - Process of establishing the following JdbcTemplate was successful: org.springframework.jdbc.core.JdbcTemplate@abff8b7
+2023.10:28:07:32:53.558 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'ETLService' via constructor to bean named 'sourceJdbcTemplate'
+2023.10:28:07:32:53.558 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'ETLService' via constructor to bean named 'destinationJdbcTemplate'
+2023.10:28:07:32:53.558 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'loggingService'
+2023.10:28:07:32:53.559 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+2023.10:28:07:32:53.559 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+2023.10:28:07:32:53.560 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
+2023.10:28:07:32:53.561 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'spring.jmx-org.springframework.boot.autoconfigure.jmx.JmxProperties'
+2023.10:28:07:32:53.562 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' via constructor to bean named 'spring.jmx-org.springframework.boot.autoconfigure.jmx.JmxProperties'
+2023.10:28:07:32:53.563 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'mbeanExporter'
+2023.10:28:07:32:53.563 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'objectNamingStrategy'
+2023.10:28:07:32:53.564 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'mbeanExporter' via factory method to bean named 'objectNamingStrategy'
+2023.10:28:07:32:53.564 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'mbeanExporter' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@f8908f6'
+2023.10:28:07:32:53.567 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'mbeanServer'
+2023.10:28:07:32:53.575 [main] DEBUG org.springframework.jmx.support.JmxUtils - Found MBeanServer: com.sun.jmx.mbeanserver.JmxMBeanServer@3caeaf62
+2023.10:28:07:32:53.578 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar.methodValidationExcludeFilter'
+2023.10:28:07:32:53.581 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration'
+2023.10:28:07:32:53.581 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'springApplicationAdminRegistrar'
+2023.10:28:07:32:53.583 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'springApplicationAdminRegistrar' via factory method to bean named 'environment'
+2023.10:28:07:32:53.585 [main] DEBUG org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application Admin MBean registered with name 'org.springframework.boot:type=Admin,name=SpringApplication'
+2023.10:28:07:32:53.585 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$ClassProxyingConfiguration'
+2023.10:28:07:32:53.585 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration'
+2023.10:28:07:32:53.586 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration'
+2023.10:28:07:32:53.586 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'applicationAvailability'
+2023.10:28:07:32:53.587 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration'
+2023.10:28:07:32:53.587 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'hikariPoolDataSourceMetadataProvider'
+2023.10:28:07:32:53.587 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration'
+2023.10:28:07:32:53.588 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration'
+2023.10:28:07:32:53.588 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+2023.10:28:07:32:53.591 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration'
+2023.10:28:07:32:53.591 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.LifecycleAutoConfiguration'
+2023.10:28:07:32:53.591 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'lifecycleProcessor'
+2023.10:28:07:32:53.591 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'spring.lifecycle-org.springframework.boot.autoconfigure.context.LifecycleProperties'
+2023.10:28:07:32:53.592 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'lifecycleProcessor' via factory method to bean named 'spring.lifecycle-org.springframework.boot.autoconfigure.context.LifecycleProperties'
+2023.10:28:07:32:53.592 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration'
+2023.10:28:07:32:53.593 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration'
+2023.10:28:07:32:53.593 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
+2023.10:28:07:32:53.594 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+2023.10:28:07:32:53.595 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' via constructor to bean named 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+2023.10:28:07:32:53.595 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration'
+2023.10:28:07:32:53.595 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'spring.sql.init-org.springframework.boot.autoconfigure.sql.init.SqlInitializationProperties'
+2023.10:28:07:32:53.596 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.ssl.SslAutoConfiguration'
+2023.10:28:07:32:53.596 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sslPropertiesSslBundleRegistrar'
+2023.10:28:07:32:53.596 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'spring.ssl-org.springframework.boot.autoconfigure.ssl.SslProperties'
+2023.10:28:07:32:53.597 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'sslPropertiesSslBundleRegistrar' via factory method to bean named 'spring.ssl-org.springframework.boot.autoconfigure.ssl.SslProperties'
+2023.10:28:07:32:53.597 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sslBundleRegistry'
+2023.10:28:07:32:53.598 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'sslBundleRegistry' via factory method to bean named 'sslPropertiesSslBundleRegistrar'
+2023.10:28:07:32:53.599 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration'
+2023.10:28:07:32:53.600 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'taskExecutorBuilder'
+2023.10:28:07:32:53.600 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+2023.10:28:07:32:53.601 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'taskExecutorBuilder' via factory method to bean named 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+2023.10:28:07:32:53.603 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskSchedulingAutoConfiguration'
+2023.10:28:07:32:53.604 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'taskSchedulerBuilder'
+2023.10:28:07:32:53.604 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+2023.10:28:07:32:53.605 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'taskSchedulerBuilder' via factory method to bean named 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+2023.10:28:07:32:53.606 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration'
+2023.10:28:07:32:53.607 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'platformTransactionManagerCustomizers'
+2023.10:28:07:32:53.608 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties'
+2023.10:28:07:32:53.613 [main] DEBUG org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2023.10:28:07:32:53.613 [main] DEBUG org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Autodetecting user-defined JMX MBeans
+2023.10:28:07:32:53.613 [main] DEBUG org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'sourceHikariDataSource' has been autodetected for JMX exposure
+2023.10:28:07:32:53.613 [main] DEBUG org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'destinationHikariDataSource' has been autodetected for JMX exposure
+2023.10:28:07:32:53.615 [main] DEBUG org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'sourceHikariDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=sourceHikariDataSource,type=HikariDataSource]
+2023.10:28:07:32:53.616 [main] DEBUG org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'destinationHikariDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=destinationHikariDataSource,type=HikariDataSource]
+2023.10:28:07:32:53.618 [main] DEBUG org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase -2147483647
+2023.10:28:07:32:53.618 [main] DEBUG org.springframework.context.support.DefaultLifecycleProcessor - Successfully started bean 'springBootLoggingLifecycle'
+2023.10:28:07:32:53.624 [main] DEBUG org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   AopAutoConfiguration matched:
+      - @ConditionalOnProperty (spring.aop.auto=true) matched (OnPropertyCondition)
+
+   AopAutoConfiguration.ClassProxyingConfiguration matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.aspectj.weaver.Advice' (OnClassCondition)
+      - @ConditionalOnProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   ApplicationAvailabilityAutoConfiguration#applicationAvailability matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.availability.ApplicationAvailability; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+      - @ConditionalOnMissingBean (types: io.r2dbc.spi.ConnectionFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceConfiguration.Hikari matched:
+      - @ConditionalOnClass found required class 'com.zaxxer.hikari.HikariDataSource' (OnClassCondition)
+      - @ConditionalOnProperty (spring.datasource.type=com.zaxxer.hikari.HikariDataSource) matched (OnPropertyCondition)
+
+   DataSourceJmxConfiguration matched:
+      - @ConditionalOnProperty (spring.jmx.enabled=true) matched (OnPropertyCondition)
+
+   DataSourceJmxConfiguration.Hikari matched:
+      - @ConditionalOnClass found required class 'com.zaxxer.hikari.HikariDataSource' (OnClassCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.HikariPoolDataSourceMetadataProviderConfiguration matched:
+      - @ConditionalOnClass found required class 'com.zaxxer.hikari.HikariDataSource' (OnClassCondition)
+
+   DataSourceTransactionManagerAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.jdbc.core.JdbcTemplate', 'org.springframework.transaction.TransactionManager' (OnClassCondition)
+
+   GenericCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.GenericCacheConfiguration automatic cache type (CacheCondition)
+
+   JmxAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.jmx.export.MBeanExporter' (OnClassCondition)
+      - @ConditionalOnProperty (spring.jmx.enabled=true) matched (OnPropertyCondition)
+
+   JmxAutoConfiguration#mbeanExporter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.jmx.export.MBeanExporter; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   JmxAutoConfiguration#mbeanServer matched:
+      - @ConditionalOnMissingBean (types: javax.management.MBeanServer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JmxAutoConfiguration#objectNamingStrategy matched:
+      - @ConditionalOnMissingBean (types: org.springframework.jmx.export.naming.ObjectNamingStrategy; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   LifecycleAutoConfiguration#defaultLifecycleProcessor matched:
+      - @ConditionalOnMissingBean (names: lifecycleProcessor; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   NoOpCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.NoOpCacheConfiguration automatic cache type (CacheCondition)
+
+   PersistenceExceptionTranslationAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor' (OnClassCondition)
+
+   PersistenceExceptionTranslationAutoConfiguration#persistenceExceptionTranslationPostProcessor matched:
+      - @ConditionalOnProperty (spring.dao.exceptiontranslation.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   SimpleCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration automatic cache type (CacheCondition)
+
+   SpringApplicationAdminJmxAutoConfiguration matched:
+      - @ConditionalOnProperty (spring.application.admin.enabled=true) matched (OnPropertyCondition)
+
+   SpringApplicationAdminJmxAutoConfiguration#springApplicationAdminRegistrar matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SqlInitializationAutoConfiguration matched:
+      - @ConditionalOnProperty (spring.sql.init.enabled) matched (OnPropertyCondition)
+      - NoneNestedConditions 0 matched 1 did not; NestedCondition on SqlInitializationAutoConfiguration.SqlInitializationModeCondition.ModeIsNever @ConditionalOnProperty (spring.sql.init.mode=never) did not find property 'mode' (SqlInitializationAutoConfiguration.SqlInitializationModeCondition)
+
+   SslAutoConfiguration#sslBundleRegistry matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.ssl.SslBundleRegistry,org.springframework.boot.ssl.SslBundles; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskExecutionAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor' (OnClassCondition)
+
+   TaskExecutionAutoConfiguration#applicationTaskExecutor matched:
+      - @ConditionalOnMissingBean (types: java.util.concurrent.Executor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskExecutionAutoConfiguration#taskExecutorBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.TaskExecutorBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskSchedulingAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler' (OnClassCondition)
+
+   TaskSchedulingAutoConfiguration#taskSchedulerBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.TaskSchedulerBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+   TransactionAutoConfiguration#platformTransactionManagerCustomizers matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   ActiveMQAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.jms.ConnectionFactory' (OnClassCondition)
+
+   AopAutoConfiguration.AspectJAutoProxyingConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.aspectj.weaver.Advice' (OnClassCondition)
+
+   ArtemisAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.jms.ConnectionFactory' (OnClassCondition)
+
+   BatchAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.batch.core.launch.JobLauncher' (OnClassCondition)
+
+   Cache2kCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.cache2k.Cache2kBuilder' (OnClassCondition)
+
+   CacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.cache.interceptor.CacheAspectSupport; SearchStrategy: all) did not find any beans of type org.springframework.cache.interceptor.CacheAspectSupport (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.cache.CacheManager' (OnClassCondition)
+
+   CacheAutoConfiguration.CacheManagerEntityManagerFactoryDependsOnPostProcessor:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean' (OnClassCondition)
+         - Ancestor org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+
+   CaffeineCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.github.benmanes.caffeine.cache.Caffeine' (OnClassCondition)
+
+   CassandraAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+
+   CassandraDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+
+   CassandraReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+
+   CassandraReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.cassandra.ReactiveSession' (OnClassCondition)
+
+   CassandraRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+
+   ClientHttpConnectorAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   CodecsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.http.codec.CodecConfigurer' (OnClassCondition)
+
+   CouchbaseAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+   CouchbaseCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+   CouchbaseDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Bucket' (OnClassCondition)
+
+   CouchbaseReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+   CouchbaseReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+   CouchbaseRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Bucket' (OnClassCondition)
+
+   DataSourceAutoConfiguration.EmbeddedDatabaseConfiguration:
+      Did not match:
+         - EmbeddedDataSource found supported pooled data source (DataSourceAutoConfiguration.EmbeddedDatabaseCondition)
+
+   DataSourceAutoConfiguration.PooledDataSourceConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: javax.sql.DataSource,javax.sql.XADataSource; SearchStrategy: all) found beans of type 'javax.sql.DataSource' sourceHikariDataSource, destinationHikariDataSource (OnBeanCondition)
+      Matched:
+         - AnyNestedCondition 1 matched 1 did not; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.PooledDataSourceAvailable PooledDataSource found supported DataSource; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.ExplicitType @ConditionalOnProperty (spring.datasource.type) did not find property 'type' (DataSourceAutoConfiguration.PooledDataSourceCondition)
+
+   DataSourceConfiguration.Dbcp2:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.commons.dbcp2.BasicDataSource' (OnClassCondition)
+
+   DataSourceConfiguration.Generic:
+      Did not match:
+         - @ConditionalOnProperty (spring.datasource.type) did not find property 'spring.datasource.type' (OnPropertyCondition)
+
+   DataSourceConfiguration.OracleUcp:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'oracle.ucp.jdbc.PoolDataSourceImpl', 'oracle.jdbc.OracleConnection' (OnClassCondition)
+
+   DataSourceConfiguration.Tomcat:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.tomcat.jdbc.pool.DataSource' (OnClassCondition)
+
+   DataSourceInitializationConfiguration:
+      Did not match:
+         - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) did not find a primary bean from beans 'sourceHikariDataSource', 'destinationHikariDataSource' (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.jdbc.datasource.init.DatabasePopulator' (OnClassCondition)
+
+   DataSourceJmxConfiguration.TomcatDataSourceJmxConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.tomcat.jdbc.pool.DataSourceProxy' (OnClassCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.CommonsDbcp2PoolDataSourceMetadataProviderConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.commons.dbcp2.BasicDataSource' (OnClassCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.OracleUcpPoolDataSourceMetadataProviderConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'oracle.ucp.jdbc.PoolDataSource', 'oracle.jdbc.OracleConnection' (OnClassCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.TomcatDataSourcePoolMetadataProviderConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.tomcat.jdbc.pool.DataSource' (OnClassCondition)
+
+   DataSourceTransactionManagerAutoConfiguration.JdbcTransactionManagerConfiguration:
+      Did not match:
+         - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) did not find a primary bean from beans 'sourceHikariDataSource', 'destinationHikariDataSource' (OnBeanCondition)
+
+   DispatcherServletAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+
+   ElasticsearchClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'co.elastic.clients.elasticsearch.ElasticsearchClient' (OnClassCondition)
+
+   ElasticsearchDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.elasticsearch.client.elc.ElasticsearchTemplate' (OnClassCondition)
+
+   ElasticsearchRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.elasticsearch.repository.ElasticsearchRepository' (OnClassCondition)
+
+   ElasticsearchRestClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.elasticsearch.client.RestClientBuilder' (OnClassCondition)
+
+   EmbeddedLdapAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.unboundid.ldap.listener.InMemoryDirectoryServer' (OnClassCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnWebApplication did not find reactive or servlet web application classes (OnWebApplicationCondition)
+
+   ErrorMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.servlet.Servlet' (OnClassCondition)
+
+   ErrorWebFluxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+
+   FlywayAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.flywaydb.core.Flyway' (OnClassCondition)
+
+   FreeMarkerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'freemarker.template.Configuration' (OnClassCondition)
+
+   GraphQlAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GraphQlQueryByExampleAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GraphQlQuerydslAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GraphQlRSocketAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GraphQlReactiveQueryByExampleAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GraphQlReactiveQuerydslAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GraphQlWebFluxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GraphQlWebFluxSecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GraphQlWebMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GraphQlWebMvcSecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GroovyTemplateAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'groovy.text.markup.MarkupTemplateEngine' (OnClassCondition)
+
+   GsonAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.google.gson.Gson' (OnClassCondition)
+
+   H2ConsoleAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.h2.server.web.JakartaWebServlet' (OnClassCondition)
+
+   HazelcastAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.hazelcast.core.HazelcastInstance' (OnClassCondition)
+
+   HazelcastCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.hazelcast.core.HazelcastInstance' (OnClassCondition)
+
+   HazelcastJpaDependencyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.hazelcast.core.HazelcastInstance' (OnClassCondition)
+
+   HibernateJpaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.persistence.EntityManager' (OnClassCondition)
+
+   HttpEncodingAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.filter.CharacterEncodingFilter' (OnClassCondition)
+
+   HttpHandlerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.http.server.reactive.HttpHandler' (OnClassCondition)
+
+   HttpMessageConvertersAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.http.converter.HttpMessageConverter' (OnClassCondition)
+
+   HypermediaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.hateoas.EntityModel' (OnClassCondition)
+
+   InfinispanCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.infinispan.spring.embedded.provider.SpringEmbeddedCacheManager' (OnClassCondition)
+
+   InfluxDbAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.influxdb.InfluxDB' (OnClassCondition)
+
+   IntegrationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.integration.config.EnableIntegration' (OnClassCondition)
+
+   JCacheCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.cache.Caching' (OnClassCondition)
+
+   JacksonAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.fasterxml.jackson.databind.ObjectMapper' (OnClassCondition)
+
+   JdbcRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.jdbc.core.namedparam.NamedParameterJdbcOperations,org.springframework.transaction.PlatformTransactionManager; SearchStrategy: all) did not find any beans of type org.springframework.jdbc.core.namedparam.NamedParameterJdbcOperations, org.springframework.transaction.PlatformTransactionManager (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'org.springframework.jdbc.core.namedparam.NamedParameterJdbcOperations', 'org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration' (OnClassCondition)
+         - @ConditionalOnProperty (spring.data.jdbc.repositories.enabled=true) matched (OnPropertyCondition)
+
+   JdbcTemplateAutoConfiguration:
+      Did not match:
+         - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) did not find a primary bean from beans 'sourceHikariDataSource', 'destinationHikariDataSource' (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.core.JdbcTemplate' (OnClassCondition)
+
+   JerseyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.servlet.ServletRegistration' (OnClassCondition)
+
+   JmsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.jms.Message' (OnClassCondition)
+
+   JndiConnectionFactoryAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.jms.core.JmsTemplate' (OnClassCondition)
+
+   JndiDataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.datasource.jndi-name) did not find property 'jndi-name' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+
+   JooqAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.jooq.DSLContext' (OnClassCondition)
+
+   JpaRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.jpa.repository.JpaRepository' (OnClassCondition)
+
+   JsonbAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.json.bind.Jsonb' (OnClassCondition)
+
+   JtaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.transaction.Transaction' (OnClassCondition)
+
+   KafkaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.kafka.core.KafkaTemplate' (OnClassCondition)
+
+   LdapAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.ldap.core.ContextSource' (OnClassCondition)
+
+   LdapRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.ldap.repository.LdapRepository' (OnClassCondition)
+
+   LiquibaseAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'liquibase.change.DatabaseChange' (OnClassCondition)
+
+   MailSenderAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.activation.MimeType' (OnClassCondition)
+
+   MailSenderValidatorAutoConfiguration:
+      Did not match:
+         - @ConditionalOnSingleCandidate did not find required type 'org.springframework.mail.javamail.JavaMailSenderImpl' (OnBeanCondition)
+
+   MessageSourceAutoConfiguration:
+      Did not match:
+         - ResourceBundle did not find bundle with basename messages (MessageSourceAutoConfiguration.ResourceBundleCondition)
+
+   MongoAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.client.MongoClient' (OnClassCondition)
+
+   MongoDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.client.MongoClient' (OnClassCondition)
+
+   MongoReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.reactivestreams.client.MongoClient' (OnClassCondition)
+
+   MongoReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.reactivestreams.client.MongoClient' (OnClassCondition)
+
+   MongoReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.reactivestreams.client.MongoClient' (OnClassCondition)
+
+   MongoRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.client.MongoClient' (OnClassCondition)
+
+   MultipartAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.servlet.MultipartConfigElement' (OnClassCondition)
+
+   MustacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.samskivert.mustache.Mustache' (OnClassCondition)
+
+   Neo4jAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+   Neo4jDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+   Neo4jReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+   Neo4jReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+   Neo4jRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+   NettyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.netty.util.NettyRuntime' (OnClassCondition)
+
+   OAuth2AuthorizationServerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.oauth2.server.authorization.OAuth2Authorization' (OnClassCondition)
+
+   OAuth2AuthorizationServerJwtAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.oauth2.server.authorization.OAuth2Authorization' (OnClassCondition)
+
+   OAuth2ClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+
+   OAuth2ResourceServerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.oauth2.server.resource.authentication.BearerTokenAuthenticationToken' (OnClassCondition)
+
+   ProjectInfoAutoConfiguration#buildProperties:
+      Did not match:
+         - @ConditionalOnResource did not find resource '${spring.info.build.location:classpath:META-INF/build-info.properties}' (OnResourceCondition)
+
+   ProjectInfoAutoConfiguration#gitProperties:
+      Did not match:
+         - GitResource did not find git info at classpath:git.properties (ProjectInfoAutoConfiguration.GitResourceAvailableCondition)
+
+   QuartzAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.quartz.Scheduler' (OnClassCondition)
+
+   R2dbcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.r2dbc.spi.ConnectionFactory' (OnClassCondition)
+
+   R2dbcDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.r2dbc.core.R2dbcEntityTemplate' (OnClassCondition)
+
+   R2dbcInitializationConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'io.r2dbc.spi.ConnectionFactory', 'org.springframework.r2dbc.connection.init.DatabasePopulator' (OnClassCondition)
+
+   R2dbcRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.r2dbc.spi.ConnectionFactory' (OnClassCondition)
+
+   R2dbcTransactionManagerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.r2dbc.connection.R2dbcTransactionManager' (OnClassCondition)
+
+   RSocketGraphQlClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   RSocketMessagingAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.rsocket.RSocket' (OnClassCondition)
+
+   RSocketRequesterAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.rsocket.RSocket' (OnClassCondition)
+
+   RSocketSecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.rsocket.core.SecuritySocketAcceptorInterceptor' (OnClassCondition)
+
+   RSocketServerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.rsocket.core.RSocketServer' (OnClassCondition)
+
+   RSocketStrategiesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.netty.buffer.PooledByteBufAllocator' (OnClassCondition)
+
+   RabbitAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.rabbitmq.client.Channel' (OnClassCondition)
+
+   ReactiveElasticsearchClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'co.elastic.clients.transport.ElasticsearchTransport' (OnClassCondition)
+
+   ReactiveElasticsearchRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.elasticsearch.client.elc.ReactiveElasticsearchClient' (OnClassCondition)
+
+   ReactiveMultipartAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.http.codec.multipart.DefaultPartHttpMessageReader' (OnClassCondition)
+
+   ReactiveOAuth2ClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   ReactiveOAuth2ResourceServerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity' (OnClassCondition)
+
+   ReactiveSecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   ReactiveUserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.authentication.ReactiveAuthenticationManager' (OnClassCondition)
+
+   ReactiveWebServerFactoryAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.http.ReactiveHttpInputMessage' (OnClassCondition)
+
+   RedisAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.redis.core.RedisOperations' (OnClassCondition)
+
+   RedisCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.redis.connection.RedisConnectionFactory' (OnClassCondition)
+
+   RedisReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   RedisRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.redis.repository.configuration.EnableRedisRepositories' (OnClassCondition)
+
+   RepositoryRestMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration' (OnClassCondition)
+
+   RestTemplateAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.client.RestTemplate' (OnClassCondition)
+
+   Saml2RelyingPartyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (OnClassCondition)
+
+   SecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.authentication.DefaultAuthenticationEventPublisher' (OnClassCondition)
+
+   SecurityFilterAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.config.http.SessionCreationPolicy' (OnClassCondition)
+
+   SendGridAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.sendgrid.SendGrid' (OnClassCondition)
+
+   ServletWebServerFactoryAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.servlet.ServletRequest' (OnClassCondition)
+
+   SessionAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.session.Session' (OnClassCondition)
+
+   SpringDataWebAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.web.PageableHandlerMethodArgumentResolver' (OnClassCondition)
+
+   TaskSchedulingAutoConfiguration#scheduledBeanLazyInitializationExcludeFilter:
+      Did not match:
+         - @ConditionalOnBean (names: org.springframework.context.annotation.internalScheduledAnnotationProcessor; SearchStrategy: all) did not find any beans named org.springframework.context.annotation.internalScheduledAnnotationProcessor (OnBeanCondition)
+
+   TaskSchedulingAutoConfiguration#taskScheduler:
+      Did not match:
+         - @ConditionalOnBean (names: org.springframework.context.annotation.internalScheduledAnnotationProcessor; SearchStrategy: all) did not find any beans named org.springframework.context.annotation.internalScheduledAnnotationProcessor (OnBeanCondition)
+
+   ThymeleafAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.thymeleaf.spring6.SpringTemplateEngine' (OnClassCondition)
+
+   TransactionAutoConfiguration#transactionalOperator:
+      Did not match:
+         - @ConditionalOnSingleCandidate (types: org.springframework.transaction.ReactiveTransactionManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.transaction.TransactionManager; SearchStrategy: all) did not find any beans of type org.springframework.transaction.TransactionManager (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration.CglibAutoProxyConfiguration:
+      Did not match:
+         - Ancestor org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+      Matched:
+         - @ConditionalOnProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration.JdkDynamicAutoProxyConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.aop.proxy-target-class=false) did not find property 'proxy-target-class' (OnPropertyCondition)
+         - Ancestor org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+
+   TransactionAutoConfiguration.TransactionTemplateConfiguration:
+      Did not match:
+         - @ConditionalOnSingleCandidate (types: org.springframework.transaction.PlatformTransactionManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+
+   ValidationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.validation.executable.ExecutableValidator' (OnClassCondition)
+
+   WebClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   WebFluxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+
+   WebMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.servlet.Servlet' (OnClassCondition)
+
+   WebServiceTemplateAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.oxm.Marshaller' (OnClassCondition)
+
+   WebServicesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.ws.transport.http.MessageDispatcherServlet' (OnClassCondition)
+
+   WebSessionIdResolverAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Mono' (OnClassCondition)
+
+   WebSocketMessagingAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurer' (OnClassCondition)
+
+   WebSocketReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.servlet.Servlet' (OnClassCondition)
+
+   WebSocketServletAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.servlet.Servlet' (OnClassCondition)
+
+   XADataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.transaction.TransactionManager' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+
+    org.springframework.boot.autoconfigure.ssl.SslAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.LifecycleAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+
+    org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration
+
+    org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration
+
+
+
+2023.10:28:07:32:53.626 [main] INFO  com.example.demo.Main - Started Main in 0.806 seconds (process running for 1.289)
+2023.10:28:07:32:53.627 [main] DEBUG org.springframework.boot.availability.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2023.10:28:07:32:53.628 [main] DEBUG org.springframework.boot.availability.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2023.10:28:07:32:53.629 [main] DEBUG com.example.demo.impl.Initializer - [1;38;5;183mTEST! This is a debug message on[0m
+2023.10:28:07:32:53.629 [main] WARN  com.example.demo.impl.Initializer - [1;38;5;183mTEST! This is a warning message on[0m
+2023.10:28:07:32:53.629 [main] ERROR com.example.demo.impl.Initializer - [1;38;5;183mTEST! This is a fatal message on[0m
+2023.10:28:07:32:53.630 [main] INFO  com.example.demo.services.logging.LoggingService - Process of hiding SysLog File has been successful
+2023.10:28:07:32:53.632 [main] INFO  com.example.demo.services.configurationReader.ConfigurationReaderService - Process of replacing YAML configurations has been successful
+2023.10:28:07:32:53.633 [main] INFO  com.example.demo.impl.HomePageDialog - [1;36mWelcome to the ETL Tool![0m
+2023.10:28:07:32:53.633 [main] INFO  com.example.demo.impl.HomePageDialog - [1;36mThis tool helps you extract, transform, and load data from and to a database.[0m
+2023.10:28:07:32:53.633 [main] INFO  com.example.demo.impl.HomePageDialog - [0;90m---[0m
+2023.10:28:07:32:53.633 [main] INFO  com.example.demo.impl.HomePageDialog - Bellow are the configurations from the text file:
+2023.10:28:07:32:53.633 [main] INFO  com.example.demo.impl.HomePageDialog - Source Database URL: [48;5;240mjdbc:sqlserver://localhost:1433;database=OldDataBase;encrypt=true;trustServerCertificate=true;useUnicode=true;characterEncoding=UTF-8;[0m
+2023.10:28:07:32:53.633 [main] INFO  com.example.demo.impl.HomePageDialog - Destination Database URL: [48;5;240mjdbc:sqlserver://localhost:1433;database=NewDataBase;encrypt=true;trustServerCertificate=true;useUnicode=true;characterEncoding=UTF-8;[0m
+2023.10:28:07:32:53.633 [main] INFO  com.example.demo.impl.HomePageDialog - [0;90m---[0m
+2023.10:28:07:32:53.633 [main] INFO  com.example.demo.impl.HomePageDialog - Press [1;38;5;29myes[0m if you desire to continue this data migration, otherwise please [1;31mtype anything else or close this window.[0m
+2023.10:28:07:32:57.057 [main] INFO  com.example.demo.impl.HomePageDialog - [0;90m---[0m
+2023.10:28:07:32:57.057 [main] INFO  com.example.demo.impl.HomePageDialog - [1;34mData migration started! Please wait until completion.[0m
+2023.10:28:07:32:57.058 [main] INFO  com.example.demo.services.etl.ETLService - [1;33m\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\[0m
+2023.10:28:07:32:57.059 [main] INFO  com.example.demo.services.etl.ETLService - [1;38;5;121mDATA TRANSFORMATION from dbo.Ranks to dbo.rank HAS STARTED ON: 2023-10-28T19:32:57.059131600[0m
+2023.10:28:07:32:57.059 [main] DEBUG org.springframework.jdbc.core.JdbcTemplate - Executing SQL query [SELECT * FROM dbo.Ranks]
+2023.10:28:07:32:57.061 [main] DEBUG org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2023.10:28:07:32:57.061 [main] DEBUG com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+2023.10:28:07:32:57.063 [main] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+2023.10:28:07:32:57.063 [main] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true
+2023.10:28:07:32:57.064 [main] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
+2023.10:28:07:32:57.064 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+2023.10:28:07:32:57.064 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
+2023.10:28:07:32:57.064 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+2023.10:28:07:32:57.065 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................none
+2023.10:28:07:32:57.065 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+2023.10:28:07:32:57.065 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+2023.10:28:07:32:57.065 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+2023.10:28:07:32:57.065 [main] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................."com.microsoft.sqlserver.jdbc.SQLServerDriver"
+2023.10:28:07:32:57.065 [main] DEBUG com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName......none
+2023.10:28:07:32:57.065 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+2023.10:28:07:32:57.065 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+2023.10:28:07:32:57.065 [main] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+2023.10:28:07:32:57.066 [main] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+2023.10:28:07:32:57.066 [main] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+2023.10:28:07:32:57.066 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:sqlserver://localhost:1433;database=OldDataBase;encrypt=true;trustServerCertificate=true;useUnicode=true;characterEncoding=UTF-8;
+2023.10:28:07:32:57.066 [main] DEBUG com.zaxxer.hikari.HikariConfig - keepaliveTime...................0
+2023.10:28:07:32:57.066 [main] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+2023.10:28:07:32:57.066 [main] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+2023.10:28:07:32:57.066 [main] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+2023.10:28:07:32:57.066 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+2023.10:28:07:32:57.066 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+2023.10:28:07:32:57.066 [main] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
+2023.10:28:07:32:57.066 [main] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
+2023.10:28:07:32:57.066 [main] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................"HikariPool-1"
+2023.10:28:07:32:57.066 [main] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
+2023.10:28:07:32:57.067 [main] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+2023.10:28:07:32:57.067 [main] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+2023.10:28:07:32:57.067 [main] DEBUG com.zaxxer.hikari.HikariConfig - schema..........................none
+2023.10:28:07:32:57.067 [main] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+2023.10:28:07:32:57.067 [main] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+2023.10:28:07:32:57.067 [main] DEBUG com.zaxxer.hikari.HikariConfig - username........................"admin"
+2023.10:28:07:32:57.067 [main] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+2023.10:28:07:32:57.067 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023.10:28:07:32:57.204 [main] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to create/setup connection: Login failed for user 'admin'. ClientConnectionId:9b61c5bf-2483-404e-ae69-d5fa9672b62c
+2023.10:28:07:32:57.204 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Cannot acquire connection from data source
+com.microsoft.sqlserver.jdbc.SQLServerException: Login failed for user 'admin'. ClientConnectionId:9b61c5bf-2483-404e-ae69-d5fa9672b62c
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:265)
+	at com.microsoft.sqlserver.jdbc.TDSTokenHandler.onEOF(tdsparser.java:300)
+	at com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:133)
+	at com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:37)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.sendLogon(SQLServerConnection.java:6299)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.logon(SQLServerConnection.java:4911)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection$LogonCommand.doExecute(SQLServerConnection.java:4849)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7620)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:3916)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:3358)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:2950)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:2790)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:1663)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1064)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:378)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:466)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:476)
+	at com.example.demo.services.etl.ETLService.extractData(ETLService.java:62)
+	at com.example.demo.services.etl.ETLService.startTransfer(ETLService.java:43)
+	at com.example.demo.impl.Initializer.startTransferringTables(Initializer.java:49)
+	at com.example.demo.impl.Initializer.performInitialization(Initializer.java:40)
+	at com.example.demo.Main.main(Main.java:14)
+2023.10:28:07:32:58.218 [main] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+com.microsoft.sqlserver.jdbc.SQLServerException: Login failed for user 'admin'. ClientConnectionId:9b61c5bf-2483-404e-ae69-d5fa9672b62c
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:265)
+	at com.microsoft.sqlserver.jdbc.TDSTokenHandler.onEOF(tdsparser.java:300)
+	at com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:133)
+	at com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:37)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.sendLogon(SQLServerConnection.java:6299)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.logon(SQLServerConnection.java:4911)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection$LogonCommand.doExecute(SQLServerConnection.java:4849)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7620)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:3916)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:3358)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:2950)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:2790)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:1663)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1064)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:378)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:466)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:476)
+	at com.example.demo.services.etl.ETLService.extractData(ETLService.java:62)
+	at com.example.demo.services.etl.ETLService.startTransfer(ETLService.java:43)
+	at com.example.demo.impl.Initializer.startTransferringTables(Initializer.java:49)
+	at com.example.demo.impl.Initializer.performInitialization(Initializer.java:40)
+	at com.example.demo.Main.main(Main.java:14)
+2023.10:28:07:32:58.219 [main] ERROR com.example.demo.services.etl.ETLService - EXTRACT DATA: The select query on: "dbo.Ranks" failed, and generated the following exception: Failed to obtain JDBC Connection
+2023.10:28:07:32:58.219 [main] INFO  com.example.demo.services.etl.ETLService - [1;38;5;121mDATA TRANSFORMATION from dbo.Ranks to dbo.rankHAS FINISHED ON: 2023-10-28T19:32:58.219054200[0m
+2023.10:28:07:32:58.219 [main] INFO  com.example.demo.services.etl.ETLService - [1;33m\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\[0m
+2023.10:28:07:32:58.219 [main] INFO  com.example.demo.services.etl.ETLService - [1;38;5;121mDATA TRANSFORMATION from dbo.AspNetUsers to dbo.user_table HAS STARTED ON: 2023-10-28T19:32:58.219054200[0m
+2023.10:28:07:32:58.219 [main] DEBUG org.springframework.jdbc.core.JdbcTemplate - Executing SQL query [SELECT * FROM dbo.AspNetUsers]
+2023.10:28:07:32:58.219 [main] DEBUG org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2023.10:28:07:32:58.219 [main] DEBUG com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+2023.10:28:07:32:58.220 [main] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+2023.10:28:07:32:58.220 [main] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true
+2023.10:28:07:32:58.220 [main] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
+2023.10:28:07:32:58.220 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+2023.10:28:07:32:58.220 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
+2023.10:28:07:32:58.220 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+2023.10:28:07:32:58.220 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................none
+2023.10:28:07:32:58.220 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+2023.10:28:07:32:58.220 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+2023.10:28:07:32:58.220 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+2023.10:28:07:32:58.220 [main] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................."com.microsoft.sqlserver.jdbc.SQLServerDriver"
+2023.10:28:07:32:58.220 [main] DEBUG com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName......none
+2023.10:28:07:32:58.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+2023.10:28:07:32:58.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+2023.10:28:07:32:58.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+2023.10:28:07:32:58.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+2023.10:28:07:32:58.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+2023.10:28:07:32:58.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:sqlserver://localhost:1433;database=OldDataBase;encrypt=true;trustServerCertificate=true;useUnicode=true;characterEncoding=UTF-8;
+2023.10:28:07:32:58.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - keepaliveTime...................0
+2023.10:28:07:32:58.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+2023.10:28:07:32:58.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+2023.10:28:07:32:58.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+2023.10:28:07:32:58.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+2023.10:28:07:32:58.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+2023.10:28:07:32:58.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
+2023.10:28:07:32:58.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
+2023.10:28:07:32:58.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................"HikariPool-1"
+2023.10:28:07:32:58.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
+2023.10:28:07:32:58.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+2023.10:28:07:32:58.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+2023.10:28:07:32:58.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - schema..........................none
+2023.10:28:07:32:58.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+2023.10:28:07:32:58.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+2023.10:28:07:32:58.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - username........................"admin"
+2023.10:28:07:32:58.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+2023.10:28:07:32:58.221 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023.10:28:07:32:58.239 [main] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to create/setup connection: Login failed for user 'admin'. ClientConnectionId:df730c59-3010-4e83-b781-35abbb94dcca
+2023.10:28:07:32:58.239 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Cannot acquire connection from data source
+com.microsoft.sqlserver.jdbc.SQLServerException: Login failed for user 'admin'. ClientConnectionId:df730c59-3010-4e83-b781-35abbb94dcca
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:265)
+	at com.microsoft.sqlserver.jdbc.TDSTokenHandler.onEOF(tdsparser.java:300)
+	at com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:133)
+	at com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:37)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.sendLogon(SQLServerConnection.java:6299)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.logon(SQLServerConnection.java:4911)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection$LogonCommand.doExecute(SQLServerConnection.java:4849)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7620)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:3916)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:3358)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:2950)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:2790)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:1663)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1064)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:378)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:466)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:476)
+	at com.example.demo.services.etl.ETLService.extractData(ETLService.java:62)
+	at com.example.demo.services.etl.ETLService.startTransfer(ETLService.java:43)
+	at com.example.demo.impl.Initializer.startTransferringTables(Initializer.java:50)
+	at com.example.demo.impl.Initializer.performInitialization(Initializer.java:40)
+	at com.example.demo.Main.main(Main.java:14)
+2023.10:28:07:32:59.244 [main] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+com.microsoft.sqlserver.jdbc.SQLServerException: Login failed for user 'admin'. ClientConnectionId:df730c59-3010-4e83-b781-35abbb94dcca
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:265)
+	at com.microsoft.sqlserver.jdbc.TDSTokenHandler.onEOF(tdsparser.java:300)
+	at com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:133)
+	at com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:37)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.sendLogon(SQLServerConnection.java:6299)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.logon(SQLServerConnection.java:4911)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection$LogonCommand.doExecute(SQLServerConnection.java:4849)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7620)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:3916)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:3358)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:2950)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:2790)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:1663)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1064)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:378)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:466)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:476)
+	at com.example.demo.services.etl.ETLService.extractData(ETLService.java:62)
+	at com.example.demo.services.etl.ETLService.startTransfer(ETLService.java:43)
+	at com.example.demo.impl.Initializer.startTransferringTables(Initializer.java:50)
+	at com.example.demo.impl.Initializer.performInitialization(Initializer.java:40)
+	at com.example.demo.Main.main(Main.java:14)
+2023.10:28:07:32:59.244 [main] ERROR com.example.demo.services.etl.ETLService - EXTRACT DATA: The select query on: "dbo.AspNetUsers" failed, and generated the following exception: Failed to obtain JDBC Connection
+2023.10:28:07:32:59.244 [main] INFO  com.example.demo.services.etl.ETLService - [1;38;5;121mDATA TRANSFORMATION from dbo.AspNetUsers to dbo.user_tableHAS FINISHED ON: 2023-10-28T19:32:59.244743[0m
+2023.10:28:07:32:59.245 [main] DEBUG org.springframework.context.annotation.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@18518ccf, started on Sat Oct 28 19:32:53 BST 2023
+2023.10:28:07:32:59.246 [main] DEBUG org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase -2147483647
+2023.10:28:07:32:59.246 [main] DEBUG org.springframework.context.support.DefaultLifecycleProcessor - Bean 'springBootLoggingLifecycle' completed its stop procedure
+2023.10:28:07:32:59.246 [main] DEBUG org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2023.10:28:07:32:59.247 [main] DEBUG org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
