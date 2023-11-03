@@ -1,4 +1,4 @@
-package com.example.demo.mappers.table2;
+package com.example.demo.mappers.rank;
 
 import com.example.demo.entities.DataRow;
 import org.springframework.jdbc.core.RowMapper;
@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 //This mapper will be responsible for the migration from database to the program
-public class Table1DatabaseRowMapper implements RowMapper<DataRow> {
+public class RankDatabaseRowMapper implements RowMapper<DataRow> {
     @Override
     public DataRow mapRow(ResultSet resultSet, int rowNum) throws SQLException {
         DataRow sourceDataRow = new DataRow();

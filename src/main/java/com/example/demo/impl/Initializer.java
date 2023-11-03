@@ -1,18 +1,22 @@
 package com.example.demo.impl;
 
-import com.example.demo.mappers.table1.Table2DatabaseRowMapper;
-import com.example.demo.mappers.table1.Table2EntityMapper;
-import com.example.demo.mappers.table2.Table1DatabaseRowMapper;
-import com.example.demo.mappers.table2.Table1EntityMapper;
-import com.example.demo.services.configurationReader.ConfigurationReaderService;
+import com.example.demo.mappers.menu.MenuDatabaseRowMapper;
+import com.example.demo.mappers.menu.MenuEntityMapper;
+import com.example.demo.mappers.rank.RankDatabaseRowMapper;
+import com.example.demo.mappers.rank.RankEntityMapper;
+import com.example.demo.mappers.user.UserDatabaseRowMapper;
+import com.example.demo.mappers.user.UserEntityMapper;
 import com.example.demo.services.etl.ETLService;
 import com.example.demo.services.logging.ANSI;
 import com.example.demo.services.logging.LoggingService;
+import com.example.demo.services.yaml_reader.YamlReaderService;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.stereotype.Component;
 
 import java.util.Optional;
+
+import static com.example.demo.services.yaml_reader.YamlConfigurationValidator.isYamlValid;
 
 @Log4j2
 @Component
@@ -25,19 +29,26 @@ public class Initializer {
     public static void performInitialization(ConfigurableApplicationContext context) {
 
         try {
-            log.debug(ANSI.colour("TEST! This is a debug message on", ANSI.LAVENDER_BOLD));
-            log.warn(ANSI.colour("TEST! This is a warning message on", ANSI.LAVENDER_BOLD));
-            log.fatal(ANSI.colour("TEST! This is a fatal message on", ANSI.LAVENDER_BOLD));
+            log.info(ANSI.colour("TOOL IS BOOTING UP", ANSI.BLUE_BOLD));
+
+            //create logs
             LoggingService loggingService = context.getBean(LoggingService.class);
             loggingService.hideFile("LOGS/SysLogs");
 
-            ConfigurationReaderService configurationReaderService = context.getBean(ConfigurationReaderService.class);
-            configurationReaderService.replaceYAMLConfigurations();
+            //validate configurations file
+            if (isYamlValid()) {
 
-            HomePageDialog homePageDialog = context.getBean(HomePageDialog.class);
-            if (homePageDialog.startUIAndConfirmConfigurations()) {
-                ETLService dataTransferService = context.getBean(ETLService.class);
-                startTransferringTables(dataTransferService);
+                //update configurations file
+                YamlReaderService yamlReaderService = context.getBean(YamlReaderService.class);
+                yamlReaderService.replaceYAMLConfigurations();
+
+                //start console dialogs
+                HomePageDialog homePageDialog = context.getBean(HomePageDialog.class);
+                if (homePageDialog.startUIAndConfirmConfigurations()) {
+                    //start transfer service
+                    ETLService dataTransferService = context.getBean(ETLService.class);
+                    startTransferringTables(dataTransferService);
+                }
             }
         } catch (Exception e) {
             log.fatal("INITIALIZATION FAILED, and threw the following exception: " + e.getMessage());
@@ -46,8 +57,9 @@ public class Initializer {
     }
 
     public static void startTransferringTables(ETLService dataTransferService) {
-        dataTransferService.startTransfer("dbo.Ranks", "dbo.rank", new Table1DatabaseRowMapper(), new Table1EntityMapper(), Optional.empty());
-        dataTransferService.startTransfer("dbo.AspNetUsers", "dbo.user_table", new Table2DatabaseRowMapper(), new Table2EntityMapper(), Optional.empty());
+        dataTransferService.startTransfer("dbo.AspNetUsers", "dbo.user_table", new UserDatabaseRowMapper(), new UserEntityMapper(), Optional.empty());
+        dataTransferService.startTransfer("dbo.Menu", "dbo.Menu", new MenuDatabaseRowMapper(), new MenuEntityMapper(), Optional.of("parent_id"));
+        dataTransferService.startTransfer("dbo.Ranks", "dbo.rank", new RankDatabaseRowMapper(), new RankEntityMapper(), Optional.empty());
         //Add more tables if needed
     }
 }

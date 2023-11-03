@@ -5,6 +5,7 @@ import com.example.demo.mappers.IEntityMapper;
 import com.example.demo.services.logging.ANSI;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Service;
@@ -17,13 +18,13 @@ import java.util.Optional;
 
 @Service
 @Log4j2
+@Lazy
 @SuppressWarnings("squid:S1192")
 public class ETLService extends ETLHelper implements IETLService {
 
     //<editor-fold desc="Connections Setups">
     private final JdbcTemplate sourceJdbcTemplate;
     private final JdbcTemplate destinationJdbcTemplate;
-
 
     public ETLService(@Qualifier("sourceJdbcTemplate") JdbcTemplate sourceJdbcTemplate, @Qualifier("destinationJdbcTemplate") JdbcTemplate destinationJdbcTemplate) {
         this.sourceJdbcTemplate = sourceJdbcTemplate;

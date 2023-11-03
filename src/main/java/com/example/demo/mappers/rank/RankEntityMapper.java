@@ -1,10 +1,10 @@
-package com.example.demo.mappers.table2;
+package com.example.demo.mappers.rank;
 
 import com.example.demo.entities.DataRow;
 import com.example.demo.mappers.EntityMapper;
 
 //This mapper will be responsible for the mapping between the source and destination databases
-public class Table1EntityMapper extends EntityMapper {
+public class RankEntityMapper extends EntityMapper {
     public DataRow transformToEntity(DataRow sourceRow) {
         DataRow destinationDataRow = new DataRow();
         destinationDataRow.addValueInData("active_status", sourceRow.getData().get("RecordStatus"));

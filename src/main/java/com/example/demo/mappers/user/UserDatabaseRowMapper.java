@@ -1,4 +1,4 @@
-package com.example.demo.mappers.table1;
+package com.example.demo.mappers.user;
 
 import com.example.demo.entities.DataRow;
 import org.springframework.jdbc.core.RowMapper;
@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 //This mapper will be responsible for the migration from database to the program
-public class Table2DatabaseRowMapper implements RowMapper<DataRow> {
+public class UserDatabaseRowMapper implements RowMapper<DataRow> {
     @Override
     public DataRow mapRow(ResultSet resultSet, int rowNum) throws SQLException {
         DataRow sourceDataRow = new DataRow();

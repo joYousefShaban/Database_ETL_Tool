@@ -1,4 +1,4 @@
-package com.example.demo.services.configurationReader;
+package com.example.demo.services.yaml_reader;
 
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
@@ -11,7 +11,7 @@ import java.nio.file.StandardCopyOption;
 
 @Log4j2
 @Service
-public class ConfigurationReaderService {
+public class YamlReaderService {
 
     public void replaceYAMLConfigurations() {
 

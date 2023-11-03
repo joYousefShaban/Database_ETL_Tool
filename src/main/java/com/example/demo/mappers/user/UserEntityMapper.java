@@ -1,10 +1,10 @@
-package com.example.demo.mappers.table1;
+package com.example.demo.mappers.user;
 
 import com.example.demo.entities.DataRow;
 import com.example.demo.mappers.EntityMapper;
 
 //This mapper will be responsible for the mapping between the source and destination databases
-public class Table2EntityMapper extends EntityMapper {
+public class UserEntityMapper extends EntityMapper {
     public DataRow transformToEntity(DataRow sourceRow) {
         DataRow destinationDataRow = new DataRow();
         destinationDataRow.addValueInData("is_active", !(boolean) sourceRow.getData().get("LockoutEnabled"));

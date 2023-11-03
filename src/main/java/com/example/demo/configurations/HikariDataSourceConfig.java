@@ -7,25 +7,29 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Lazy;
 
 @Configuration
 @Log4j2
+@Lazy
 public class HikariDataSourceConfig {
 
     @Bean
     @ConfigurationProperties("spring.datasource.source")
     public HikariDataSource sourceHikariDataSource() {
         return getHikariDataSource();
+        return createHikariDataSource();
     }
 
     @Bean
     @ConfigurationProperties("spring.datasource.destination")
     public HikariDataSource destinationHikariDataSource() {
         return getHikariDataSource();
+        return createHikariDataSource();
     }
 
     @Nullable
-    private HikariDataSource getHikariDataSource() {
+    private HikariDataSource createHikariDataSource() {
         try {
             HikariDataSource hikariDataSource = DataSourceBuilder.create().type(HikariDataSource.class).build();
             log.info("Process of establishing the following HikariDataSource connection was successful: " + hikariDataSource);
