@@ -1,5 +1,6 @@
 package com.example.demo.configurations;
 
+import com.example.demo.services.logging.ANSI;
 import com.zaxxer.hikari.HikariDataSource;
 import lombok.extern.log4j.Log4j2;
 import org.jetbrains.annotations.Nullable;
@@ -28,10 +29,10 @@ public class JdbcTemplateConfig {
     private JdbcTemplate createJdbcTemplate(HikariDataSource hikaridataSource) {
         try {
             JdbcTemplate jdbcTemplate = new JdbcTemplate(hikaridataSource);
-            log.info("Process of establishing the following JdbcTemplate was successful: " + jdbcTemplate);
+            log.info(ANSI.colour("Establishing the following JdbcTemplate connection is successful: " + jdbcTemplate, ANSI.TEAL_BOLD));
             return jdbcTemplate;
         } catch (Exception e) {
-            log.fatal("Process of establishing a JdbcTemplate was unsuccessful, and caused the following exception: " + e.getMessage());
+            log.fatal(ANSI.colour("Establishing a JdbcTemplate connection failed, and generated the following exception: " + e.getMessage(), ANSI.RED_BOLD));
         }
         return null;
     }

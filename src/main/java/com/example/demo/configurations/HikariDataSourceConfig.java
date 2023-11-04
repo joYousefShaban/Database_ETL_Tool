@@ -1,5 +1,6 @@
 package com.example.demo.configurations;
 
+import com.example.demo.services.logging.ANSI;
 import com.example.demo.services.yaml_reader.YamlDeserializer;
 import com.example.demo.entities.connection.ConnectionEntity;
 import com.example.demo.entities.connection.DestinationEntity;
@@ -34,10 +35,10 @@ public class HikariDataSourceConfig {
     private HikariDataSource createHikariDataSource(ConnectionEntity externalConnectionEntity) {
         try {
             HikariConfig config = getHikariConfig(externalConnectionEntity);
-            log.info("Process of establishing the following HikariDataSource connection was successful: " + config);
+            log.info(ANSI.colour("Establishing the following HikariDataSource connection is successful: " + config, ANSI.TEAL_BOLD));
             return new HikariDataSource(config);
         } catch (Exception e) {
-            log.fatal("Process of establishing a HikariDataSource connection was unsuccessful, and caused the following exception: " + e.getMessage());
+            log.fatal(ANSI.colour("Establishing a HikariDataSource connection failed, and generated the following exception: " + e.getMessage(), ANSI.RED_BOLD));
         }
         return null;
     }

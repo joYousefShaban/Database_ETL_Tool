@@ -34,22 +34,31 @@ public class Initializer {
             LoggingService loggingService = context.getBean(LoggingService.class);
             loggingService.hideFile("LOGS/SysLogs");
 
-            //validate configurations file
+            //deserialize external configuration file
             YamlDeserializer.load();
+
+            //validate external configurations
             if (YamlValidator.isYamlValid()) {
+                log.info(ANSI.colour("Welcome to the ETL Tool!", ANSI.BLUE_BOLD));
+                log.info(ANSI.colour("This tool helps you extract, transform, and load data from and to a database.", ANSI.BLUE_BOLD));
 
                 //start console dialogs
                 HomePageDialog homePageDialog = context.getBean(HomePageDialog.class);
                 if (homePageDialog.startUIAndConfirmConfigurations()) {
+
                     //start transfer service
                     ETLService dataTransferService = context.getBean(ETLService.class);
                     startTransferringTables(dataTransferService);
                 }
             }
         } catch (Exception e) {
-            log.fatal("INITIALIZATION FAILED, and threw the following exception: " + e.getMessage());
+            log.fatal(ANSI.colour("INITIALIZATION FAILED, and threw the following exception: " + e.getMessage(), ANSI.RED_BOLD));
+        } finally {
+            log.info(ANSI.colour("Tool has finished all migrations", ANSI.BLUE_BOLD));
+            log.info(ANSI.colour("Cleanup Starting...", ANSI.BLUE_BOLD));
+
+            context.close();
         }
-        context.close();
     }
 
     public static void startTransferringTables(ETLService dataTransferService) {

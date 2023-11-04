@@ -17,19 +17,16 @@ public class HomePageDialog {
 
     public boolean startUIAndConfirmConfigurations() {
         // Display a welcome message to the user
-        log.info(ANSI.colour("Welcome to the ETL Tool!", ANSI.CYAN_BOLD));
-        log.info(ANSI.colour("This tool helps you extract, transform, and load data from and to a database.", ANSI.CYAN_BOLD));
-        log.info(ANSI.colour("---", ANSI.BLACK_BRIGHT));
-        log.info("Bellow are the configurations from the text file:");
+        log.info(ANSI.colour("---", ANSI.ORANGE_BRIGHT));
+        log.info(ANSI.colour("Bellow are the configurations from the text file:", ANSI.ORANGE_BRIGHT));
 
         // Display the entered URLs
-        log.info("Source Database URL: " + ANSI.colour(YamlDeserializer.externalConfig.getSource().getJdbcUrl(), ANSI.GRAY_BACKGROUND));
-        log.info("Destination Database URL: " + ANSI.colour(YamlDeserializer.externalConfig.getDestination().getJdbcUrl(), ANSI.GRAY_BACKGROUND));
-        log.info(ANSI.colour("---", ANSI.BLACK_BRIGHT));
-        log.info("Press " + ANSI.colour("yes", ANSI.TEAL_BOLD) + " if you desire to continue this data migration, otherwise please " + ANSI.colour("type anything else or close this window.", ANSI.RED_BOLD));
+        log.info(ANSI.colour("Source Database URL: ", ANSI.ORANGE_BRIGHT) + ANSI.colour(YamlDeserializer.externalConfig.getSource().getJdbcUrl(), ANSI.GRAY_BACKGROUND));
+        log.info(ANSI.colour("Destination Database URL: ", ANSI.ORANGE_BRIGHT) + ANSI.colour(YamlDeserializer.externalConfig.getDestination().getJdbcUrl(), ANSI.GRAY_BACKGROUND));
+        log.info(ANSI.colour("---", ANSI.ORANGE_BRIGHT));
+        log.info("Type " + ANSI.colour("yes", ANSI.TEAL_BOLD) + " if you desire to continue this data migration, otherwise please " + ANSI.colour("type anything else or close this window.", ANSI.RED_BOLD));
 
         if (isAffirmativeResponse()) {
-            log.info(ANSI.colour("---", ANSI.BLACK_BRIGHT));
             log.info(ANSI.colour("Data migration started! Please wait until completion.", ANSI.BLUE_BOLD));
             return true;
         }

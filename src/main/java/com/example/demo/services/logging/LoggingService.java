@@ -3,7 +3,7 @@ package com.example.demo.services.logging;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
 
-import java.io.IOException;
+import java.io.FileNotFoundException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.attribute.DosFileAttributeView;
@@ -17,15 +17,14 @@ public class LoggingService {
 
         try {
             if (Files.exists(file)) {
-
                 DosFileAttributeView dosView = Files.getFileAttributeView(file, DosFileAttributeView.class);
                 dosView.setHidden(true);
-                log.info("Process of hiding SysLog File has been successful");
+                log.info(ANSI.colour("Service of hiding" + file.getFileName() + " file is successful", ANSI.TEAL_BOLD));
             } else {
-                log.error("Process of hiding SysLog File has failed");
+                throw new FileNotFoundException("File does not exist");
             }
-        } catch (IOException e) {
-            log.fatal("Process of hiding SysLog File has caused the following exception: " + e.getMessage());
+        } catch (Exception e) {
+            log.error(ANSI.colour("Service of hiding" + file.getFileName() + " file failed and caused the following exception: " + e.getMessage(), ANSI.RED_BOLD));
         }
     }
 }
