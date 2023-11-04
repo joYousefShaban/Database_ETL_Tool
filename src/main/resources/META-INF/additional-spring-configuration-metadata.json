@@ -1,7 +1,7 @@
 {
   "properties": [
     {
-      "name": "spring.datasource.source.jdbc-url",
+      "name": "spring.datasource.source.jdbcUrl",
       "type": "java.lang.String",
       "description": "JDBC URL for the source database."
     },
@@ -16,7 +16,7 @@
       "description": "Password for the source database."
     },
     {
-      "name": "spring.datasource.source.driver-class-name",
+      "name": "spring.datasource.source.driverClassName",
       "type": "java.lang.String",
       "description": "Driver class name for the source database."
     },
@@ -26,17 +26,17 @@
       "description": "Description for spring.datasource.source.Hikari."
     },
     {
-      "name": "spring.datasource.source.hikari.connection-timeout",
+      "name": "spring.datasource.source.hikariConnectionTimeout",
       "type": "java.lang.Long",
       "description": "Connection timeout for the Hikari pool in the source database."
     },
     {
-      "name": "spring.datasource.source.hikari.maximum-pool-size",
+      "name": "spring.datasource.source.hikariMaximum-poolSize",
       "type": "java.lang.Integer",
       "description": "Maximum pool size for the Hikari pool in the source database."
     },
     {
-      "name": "spring.datasource.destination.jdbc-url",
+      "name": "spring.datasource.destination.jdbcUrl",
       "type": "java.lang.String",
       "description": "JDBC URL for the destination database."
     },
@@ -51,7 +51,7 @@
       "description": "Password for the destination database."
     },
     {
-      "name": "spring.datasource.destination.driver-class-name",
+      "name": "spring.datasource.destination.driverClassName",
       "type": "java.lang.String",
       "description": "Driver class name for the destination database."
     },
@@ -61,12 +61,12 @@
       "description": "Description for spring.datasource.source.Hikari."
     },
     {
-      "name": "spring.datasource.destination.hikari.connection-timeout",
+      "name": "spring.datasource.destination.hikari.connectionTimeout",
       "type": "java.lang.Long",
       "description": "Connection timeout for the Hikari pool in the destination database."
     },
     {
-      "name": "spring.datasource.destination.hikari.maximum-pool-size",
+      "name": "spring.datasource.destination.hikari.maximumPoolSize",
       "type": "java.lang.Integer",
       "description": "Maximum pool size for the Hikari pool in the destination database."
     }

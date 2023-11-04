@@ -1,9 +1,8 @@
 package com.example.demo.impl;
 
 import com.example.demo.services.logging.ANSI;
+import com.example.demo.services.yaml_reader.YamlDeserializer;
 import lombok.extern.log4j.Log4j2;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
 import java.util.Scanner;
@@ -11,12 +10,6 @@ import java.util.Scanner;
 @Log4j2
 @Component
 public class HomePageDialog {
-    private final Environment env;
-
-    @Autowired
-    HomePageDialog(Environment env) {
-        this.env = env;
-    }
 
     public static boolean isAffirmativeResponse() {
         return new Scanner(System.in).nextLine().equalsIgnoreCase("yes");
@@ -30,8 +23,8 @@ public class HomePageDialog {
         log.info("Bellow are the configurations from the text file:");
 
         // Display the entered URLs
-        log.info("Source Database URL: " + ANSI.colour(env.getProperty("spring.datasource.source.jdbc-url"), ANSI.GRAY_BACKGROUND));
-        log.info("Destination Database URL: " + ANSI.colour(env.getProperty("spring.datasource.destination.jdbc-url"), ANSI.GRAY_BACKGROUND));
+        log.info("Source Database URL: " + ANSI.colour(YamlDeserializer.externalConfig.getSource().getJdbcUrl(), ANSI.GRAY_BACKGROUND));
+        log.info("Destination Database URL: " + ANSI.colour(YamlDeserializer.externalConfig.getDestination().getJdbcUrl(), ANSI.GRAY_BACKGROUND));
         log.info(ANSI.colour("---", ANSI.BLACK_BRIGHT));
         log.info("Press " + ANSI.colour("yes", ANSI.TEAL_BOLD) + " if you desire to continue this data migration, otherwise please " + ANSI.colour("type anything else or close this window.", ANSI.RED_BOLD));
 

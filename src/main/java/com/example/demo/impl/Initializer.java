@@ -9,14 +9,13 @@ import com.example.demo.mappers.user.UserEntityMapper;
 import com.example.demo.services.etl.ETLService;
 import com.example.demo.services.logging.ANSI;
 import com.example.demo.services.logging.LoggingService;
-import com.example.demo.services.yaml_reader.YamlReaderService;
+import com.example.demo.services.yaml_reader.YamlDeserializer;
+import com.example.demo.services.yaml_reader.YamlValidator;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.stereotype.Component;
 
 import java.util.Optional;
-
-import static com.example.demo.services.yaml_reader.YamlConfigurationValidator.isYamlValid;
 
 @Log4j2
 @Component
@@ -36,11 +35,8 @@ public class Initializer {
             loggingService.hideFile("LOGS/SysLogs");
 
             //validate configurations file
-            if (isYamlValid()) {
-
-                //update configurations file
-                YamlReaderService yamlReaderService = context.getBean(YamlReaderService.class);
-                yamlReaderService.replaceYAMLConfigurations();
+            YamlDeserializer.load();
+            if (YamlValidator.isYamlValid()) {
 
                 //start console dialogs
                 HomePageDialog homePageDialog = context.getBean(HomePageDialog.class);
