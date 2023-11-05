@@ -21,7 +21,7 @@ public class YamlDeserializer {
 
     }
 
-    public static void load() {
+    public static boolean load() {
         try {
             // Create an ObjectMapper configured to read and write YAML data
             ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
@@ -30,9 +30,10 @@ public class YamlDeserializer {
             externalConfig = mapper.readValue(new File("./ConnectionConfigurations.yml"), DataSourceEntity.class);
 
             log.info(ANSI.colour("Service of loading the external configuration file is successful", ANSI.TEAL_BOLD));
+            return true;
         } catch (Exception e) {
             log.fatal(ANSI.colour("Service of loading the external configuration file failed and caused following exception: " + e.getMessage(), ANSI.RED_BOLD));
         }
+        return false;
     }
-
 }

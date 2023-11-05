@@ -34,11 +34,8 @@ public class Initializer {
             LoggingService loggingService = context.getBean(LoggingService.class);
             loggingService.hideFile("LOGS/SysLogs");
 
-            //deserialize external configuration file
-            YamlDeserializer.load();
-
-            //validate external configurations
-            if (YamlValidator.isYamlValid()) {
+            //deserialize and validate external configurations
+            if (YamlDeserializer.load() && YamlValidator.isYamlValid()) {
                 log.info(ANSI.colour("Welcome to the ETL Tool!", ANSI.BLUE_BOLD));
                 log.info(ANSI.colour("This tool helps you extract, transform, and load data from and to a database.", ANSI.BLUE_BOLD));
 
