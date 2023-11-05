@@ -20,11 +20,10 @@ public class DataRow implements IDataRow {
         data.put(key, value);
     }
 
-    public int size() {
-        return data.size();
-    }
-
-    @Deprecated
+    /**
+     * @deprecated (since"3-Nov-23", forRemoval = false, calling could be avoided if mapping had the key at last)
+     */
+    @Deprecated(since = "3-Nov-23", forRemoval = false)
     public void moveKeyToTheEnd(String key) {
         data.put(key, data.remove(key));
     }

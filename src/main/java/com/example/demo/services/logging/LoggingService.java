@@ -8,8 +8,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.attribute.DosFileAttributeView;
 
-@Log4j2
 @Service
+@Log4j2
 public class LoggingService {
     //Configurations of the logging service could be found at "logback.xml"
     public void hideFile(String filePath) {

@@ -4,6 +4,7 @@ import com.example.demo.entities.DataRow;
 import com.example.demo.mappers.IEntityMapper;
 import com.example.demo.services.logging.ANSI;
 import lombok.extern.log4j.Log4j2;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.jdbc.UncategorizedSQLException;
@@ -26,7 +27,8 @@ public class ETLService extends ETLHelper implements IETLService {
     private final JdbcTemplate sourceJdbcTemplate;
     private final JdbcTemplate destinationJdbcTemplate;
 
-    public ETLService(@Qualifier("sourceJdbcTemplate") JdbcTemplate sourceJdbcTemplate, @Qualifier("destinationJdbcTemplate") JdbcTemplate destinationJdbcTemplate) {
+    @Autowired
+    public ETLService(@Qualifier("getSourceJdbcTemplate") JdbcTemplate sourceJdbcTemplate, @Qualifier("getDestinationJdbcTemplate") JdbcTemplate destinationJdbcTemplate) {
         this.sourceJdbcTemplate = sourceJdbcTemplate;
         this.destinationJdbcTemplate = destinationJdbcTemplate;
     }
@@ -117,8 +119,9 @@ public class ETLService extends ETLHelper implements IETLService {
 
     private void setIdentityInsert(String destinationTableName, boolean activate) {
         try {
-            if (activate) destinationJdbcTemplate.execute("SET IDENTITY_INSERT " + destinationTableName + " ON");
-            else {
+            if (activate) {
+                destinationJdbcTemplate.execute("SET IDENTITY_INSERT " + destinationTableName + " ON");
+            } else {
                 destinationJdbcTemplate.execute("SET IDENTITY_INSERT " + destinationTableName + " OFF");
             }
         } catch (UncategorizedSQLException e) {

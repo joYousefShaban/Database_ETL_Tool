@@ -15,14 +15,22 @@ import org.springframework.jdbc.core.JdbcTemplate;
 @Lazy
 public class JdbcTemplateConfig {
 
-    @Bean
-    public JdbcTemplate sourceJdbcTemplate(@Qualifier("sourceHikariDataSource") HikariDataSource sourceHikariDataSource) {
-        return createJdbcTemplate(sourceHikariDataSource);
+    private final JdbcTemplate sourceJdbcTemplate;
+    private final JdbcTemplate destinationJdbcTemplate;
+
+    public JdbcTemplateConfig(@Qualifier("sourceHikariDataSource") HikariDataSource sourceHikariDataSource, @Qualifier("destinationHikariDataSource") HikariDataSource destinationHikariDataSource) {
+        sourceJdbcTemplate = createJdbcTemplate(sourceHikariDataSource);
+        destinationJdbcTemplate = createJdbcTemplate(destinationHikariDataSource);
     }
 
     @Bean
-    public JdbcTemplate destinationJdbcTemplate(@Qualifier("destinationHikariDataSource") HikariDataSource destinationHikariDataSource) {
-        return createJdbcTemplate(destinationHikariDataSource);
+    public JdbcTemplate getSourceJdbcTemplate() {
+        return sourceJdbcTemplate;
+    }
+
+    @Bean
+    public JdbcTemplate getDestinationJdbcTemplate() {
+        return destinationJdbcTemplate;
     }
 
     @Nullable

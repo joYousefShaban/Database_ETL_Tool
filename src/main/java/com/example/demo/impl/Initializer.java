@@ -1,5 +1,6 @@
 package com.example.demo.impl;
 
+import com.example.demo.configurations.JdbcTemplateConfig;
 import com.example.demo.mappers.menu.MenuDatabaseRowMapper;
 import com.example.demo.mappers.menu.MenuEntityMapper;
 import com.example.demo.mappers.rank.RankDatabaseRowMapper;
@@ -27,7 +28,7 @@ public class Initializer {
 
     public static void performInitialization(ConfigurableApplicationContext context) {
 
-        try {
+        try (context) {
             log.info(ANSI.colour("TOOL IS BOOTING UP", ANSI.BLUE_BOLD));
 
             //create logs
@@ -43,6 +44,9 @@ public class Initializer {
                 HomePageDialog homePageDialog = context.getBean(HomePageDialog.class);
                 if (homePageDialog.startUIAndConfirmConfigurations()) {
 
+                    //Connections Setups
+                    context.getBean(JdbcTemplateConfig.class);
+
                     //start transfer service
                     ETLService dataTransferService = context.getBean(ETLService.class);
                     startTransferringTables(dataTransferService);
@@ -53,8 +57,6 @@ public class Initializer {
             log.fatal(ANSI.colour("INITIALIZATION FAILED, and threw the following exception: \r\n" + e.getMessage(), ANSI.RED_BOLD));
         } finally {
             log.info(ANSI.colour("Cleanup Starting...", ANSI.BLUE_BOLD));
-
-            context.close();
         }
     }
 
