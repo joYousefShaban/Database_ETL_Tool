@@ -32,7 +32,7 @@ public class JdbcTemplateConfig {
             log.info(ANSI.colour("Establishing the following JdbcTemplate connection is successful: " + jdbcTemplate, ANSI.TEAL_BOLD));
             return jdbcTemplate;
         } catch (Exception e) {
-            log.fatal(ANSI.colour("Establishing a JdbcTemplate connection failed, and generated the following exception: " + e.getMessage(), ANSI.RED_BOLD));
+            log.fatal(ANSI.colour("Establishing a JdbcTemplate connection failed, and generated the following exception: \r\n" + e.getMessage(), ANSI.RED_BOLD));
         }
         return null;
     }

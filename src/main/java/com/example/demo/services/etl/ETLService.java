@@ -62,7 +62,7 @@ public class ETLService extends ETLHelper implements IETLService {
         try {
             return sourceJdbcTemplate.query("SELECT * FROM " + sourceTableName, rowMapper);
         } catch (Exception e) {
-            log.fatal(ANSI.colour("PROCESS OF EXTRACTING DATA: The select query on: \"" + sourceTableName + "\" failed, and generated the following exception: " + e.getMessage(), ANSI.RED_BOLD));
+            log.fatal(ANSI.colour("PROCESS OF EXTRACTING DATA: The select query on: \"" + sourceTableName + "\" failed, and generated the following exception: \r\n" + e.getMessage(), ANSI.RED_BOLD));
         }
         return Collections.emptyList();
     }
@@ -79,7 +79,7 @@ public class ETLService extends ETLHelper implements IETLService {
 
                 destinationRowData.add(destinationData);
             } catch (Exception e) {
-                log.fatal(ANSI.colour("PROCESS OF TRANSFORMING DATA: The mapping of: \"" + sourceData.getData() + "\" failed, and generated the following exception: " + e.getMessage(), ANSI.RED_BOLD));
+                log.fatal(ANSI.colour("PROCESS OF TRANSFORMING DATA: The mapping of: \"" + sourceData.getData() + "\" failed, and generated the following exception: \r\n" + e.getMessage(), ANSI.RED_BOLD));
             }
 
         }
@@ -107,7 +107,7 @@ public class ETLService extends ETLHelper implements IETLService {
                     destinationJdbcTemplate.update(insertSQL, person.getData().values().toArray());
                 }
             } catch (Exception e) {
-                log.fatal(ANSI.colour("PROCESS OF LOADING DATA: The query on: \"" + destinationTableName + "\" failed, and generated the following exception: " + e.getMessage(), ANSI.RED_BOLD));
+                log.fatal(ANSI.colour("PROCESS OF LOADING DATA: The query on: \"" + destinationTableName + "\" failed, and generated the following exception: \r\n" + e.getMessage(), ANSI.RED_BOLD));
             }
         }
         //Disable insertion of Identity
@@ -122,10 +122,9 @@ public class ETLService extends ETLHelper implements IETLService {
                 destinationJdbcTemplate.execute("SET IDENTITY_INSERT " + destinationTableName + " OFF");
             }
         } catch (UncategorizedSQLException e) {
-            log.warn(ANSI.colour("\"" + destinationTableName + "\" table generated the following warning: " + e.getMessage(), ANSI.YELLOW_BRIGHT));
-            log.info(ANSI.colour("Please notice that the previous exception is normal if the table doesn't accept SET IDENTITY_INSERT specific rule.", ANSI.GRAY));
+            log.warn(ANSI.colour("Couldn't modify rule of identity_insert for \"" + destinationTableName + "\" table ", ANSI.YELLOW_BRIGHT));
         } catch (Exception e) {
-            log.error(ANSI.colour("\"" + destinationTableName + "\" table failed, and generated the following exception: " + e.getMessage(), ANSI.YELLOW_BRIGHT));
+            log.fatal(ANSI.colour("\"" + destinationTableName + "\" table failed, and generated the following exception: \r\n" + e.getMessage(), ANSI.YELLOW_BRIGHT));
         }
     }
 

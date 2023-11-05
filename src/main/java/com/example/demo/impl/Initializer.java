@@ -47,11 +47,11 @@ public class Initializer {
                     ETLService dataTransferService = context.getBean(ETLService.class);
                     startTransferringTables(dataTransferService);
                 }
+                log.info(ANSI.colour("Tool has finished all migrations", ANSI.BLUE_BOLD));
             }
         } catch (Exception e) {
-            log.fatal(ANSI.colour("INITIALIZATION FAILED, and threw the following exception: " + e.getMessage(), ANSI.RED_BOLD));
+            log.fatal(ANSI.colour("INITIALIZATION FAILED, and threw the following exception: \r\n" + e.getMessage(), ANSI.RED_BOLD));
         } finally {
-            log.info(ANSI.colour("Tool has finished all migrations", ANSI.BLUE_BOLD));
             log.info(ANSI.colour("Cleanup Starting...", ANSI.BLUE_BOLD));
 
             context.close();

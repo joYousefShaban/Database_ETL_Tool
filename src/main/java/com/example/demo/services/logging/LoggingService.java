@@ -24,7 +24,7 @@ public class LoggingService {
                 throw new FileNotFoundException("File does not exist");
             }
         } catch (Exception e) {
-            log.error(ANSI.colour("Service of hiding" + file.getFileName() + " file failed and caused the following exception: " + e.getMessage(), ANSI.RED_BOLD));
+            log.fatal(ANSI.colour("Service of hiding" + file.getFileName() + " file failed, and generated the following exception: \r\n" + e.getMessage(), ANSI.RED_BOLD));
         }
     }
 }

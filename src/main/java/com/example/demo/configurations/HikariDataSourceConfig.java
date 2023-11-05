@@ -38,7 +38,7 @@ public class HikariDataSourceConfig {
             log.info(ANSI.colour("Establishing the following HikariDataSource connection is successful: " + config, ANSI.TEAL_BOLD));
             return new HikariDataSource(config);
         } catch (Exception e) {
-            log.fatal(ANSI.colour("Establishing a HikariDataSource connection failed, and generated the following exception: " + e.getMessage(), ANSI.RED_BOLD));
+            log.fatal(ANSI.colour("Establishing a HikariDataSource connection failed, and generated the following exception: \r\n" + e.getMessage(), ANSI.RED_BOLD));
         }
         return null;
     }

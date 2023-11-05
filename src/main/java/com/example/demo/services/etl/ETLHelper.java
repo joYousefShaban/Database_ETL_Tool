@@ -47,7 +47,7 @@ public class ETLHelper implements IETLHelper {
             });
             return String.format("UPDATE %s SET %s WHERE id = ?", destinationTableName, setClause);
         } catch (Exception e) {
-            log.fatal(ANSI.colour("SERVICE OF SQL GENERATION: The update sql statement generation for: \"" + sampleData.getData() + "\" to \"" + destinationTableName + "\" table failed, and generated the following exception: " + e.getMessage(), ANSI.RED_BOLD));
+            log.fatal(ANSI.colour("SERVICE OF SQL GENERATION: The update sql statement generation for: \"" + sampleData.getData() + "\" to \"" + destinationTableName + "\" table failed, and generated the following exception: \r\n" + e.getMessage(), ANSI.RED_BOLD));
         }
         return null;
     }
@@ -63,7 +63,7 @@ public class ETLHelper implements IETLHelper {
             });
             return String.format("INSERT INTO %s (%s) VALUES (%s)", destinationTableName, columnNames, placeholders);
         } catch (Exception e) {
-            log.fatal(ANSI.colour("SERVICE OF SQL GENERATION: The insert sql statement generation for: \"" + sampleData.getData() + "\" to \"" + destinationTableName + "\" table failed, and generated the following exception: " + e.getMessage(), ANSI.RED_BOLD));
+            log.fatal(ANSI.colour("SERVICE OF SQL GENERATION: The insert sql statement generation for: \"" + sampleData.getData() + "\" to \"" + destinationTableName + "\" table failed, and generated the following exception: \r\n" + e.getMessage(), ANSI.RED_BOLD));
         }
         return null;
     }

@@ -3,6 +3,7 @@ package com.example.demo.services.yaml_reader;
 import com.example.demo.entities.connection.DataSourceEntity;
 import com.example.demo.services.logging.ANSI;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.exc.MismatchedInputException;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 import lombok.Getter;
 import lombok.extern.log4j.Log4j2;
@@ -31,8 +32,10 @@ public class YamlDeserializer {
 
             log.info(ANSI.colour("Service of loading the external configuration file is successful", ANSI.TEAL_BOLD));
             return true;
+        } catch (MismatchedInputException e) {
+            log.fatal(ANSI.colour("Service of loading the external configuration file failed, and generated the following mismatch exception: \r\n" + e.getMessage(), ANSI.RED_BOLD));
         } catch (Exception e) {
-            log.fatal(ANSI.colour("Service of loading the external configuration file failed and caused following exception: " + e.getMessage(), ANSI.RED_BOLD));
+            log.fatal(ANSI.colour("Service of loading the external configuration file failed, and generated the following exception: \r\n" + e.getMessage(), ANSI.RED_BOLD));
         }
         return false;
     }
