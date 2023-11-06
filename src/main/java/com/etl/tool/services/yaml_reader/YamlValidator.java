@@ -1,7 +1,7 @@
-package com.example.demo.services.yaml_reader;
+package com.etl.tool.services.yaml_reader;
 
-import com.example.demo.entities.connection.ConnectionEntity;
-import com.example.demo.services.logging.ANSI;
+import com.etl.tool.entities.connection.ConnectionEntity;
+import com.etl.tool.services.logging.ANSI;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
 
