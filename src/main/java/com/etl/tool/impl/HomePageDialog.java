@@ -21,8 +21,8 @@ public class HomePageDialog {
         log.info(ANSI.colour("Bellow are the configurations from the text file:", ANSI.ORANGE_BRIGHT));
 
         // Display the entered URLs
-        log.info(ANSI.colour("Source Database URL: ", ANSI.ORANGE_BRIGHT) + ANSI.colour(YamlDeserializer.externalConfig.getSource().getJdbcUrl(), ANSI.GRAY_BACKGROUND));
-        log.info(ANSI.colour("Destination Database URL: ", ANSI.ORANGE_BRIGHT) + ANSI.colour(YamlDeserializer.externalConfig.getDestination().getJdbcUrl(), ANSI.GRAY_BACKGROUND));
+        log.info(ANSI.colour("Source Database URL: ", ANSI.ORANGE_BRIGHT) + ANSI.colour(YamlDeserializer.getExternalConfig().getSource().getJdbcUrl(), ANSI.GRAY_BACKGROUND));
+        log.info(ANSI.colour("Destination Database URL: ", ANSI.ORANGE_BRIGHT) + ANSI.colour(YamlDeserializer.getExternalConfig().getDestination().getJdbcUrl(), ANSI.GRAY_BACKGROUND));
         log.info(ANSI.colour("---", ANSI.ORANGE_BRIGHT));
         log.info("Type " + ANSI.colour("yes", ANSI.TEAL_BOLD) + " if you desire to continue this data migration, otherwise please " + ANSI.colour("type anything else or close this window.", ANSI.RED_BOLD));
 

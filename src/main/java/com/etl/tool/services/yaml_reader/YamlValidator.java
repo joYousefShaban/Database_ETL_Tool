@@ -15,8 +15,8 @@ public class YamlValidator {
 
     public static boolean isYamlValid() {
 
-        boolean isValidSource = isConnectionValid(YamlDeserializer.externalConfig.getSource(), "source");
-        boolean isValidDestination = isConnectionValid(YamlDeserializer.externalConfig.getDestination(), "destination");
+        boolean isValidSource = isConnectionValid(YamlDeserializer.getExternalConfig().getSource(), "source");
+        boolean isValidDestination = isConnectionValid(YamlDeserializer.getExternalConfig().getDestination(), "destination");
 
         log.info("Is YAML valid? " +
                 ANSI.colour("Source = " + isValidSource, isValidSource ? ANSI.TEAL_BOLD : ANSI.RED_BOLD) + ", " +

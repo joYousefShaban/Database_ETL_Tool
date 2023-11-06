@@ -21,13 +21,13 @@ public class HikariDataSourceConfig {
 
     @Bean
     public HikariDataSource sourceHikariDataSource() {
-        SourceEntity externalSourceEntity = YamlDeserializer.externalConfig.getSource();
+        SourceEntity externalSourceEntity = YamlDeserializer.getExternalConfig().getSource();
         return createHikariDataSource(externalSourceEntity);
     }
 
     @Bean
     public HikariDataSource destinationHikariDataSource() {
-        DestinationEntity externalDestinationConfig = YamlDeserializer.externalConfig.getDestination();
+        DestinationEntity externalDestinationConfig = YamlDeserializer.getExternalConfig().getDestination();
         return createHikariDataSource(externalDestinationConfig);
     }
 

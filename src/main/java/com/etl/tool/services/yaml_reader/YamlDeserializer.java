@@ -13,10 +13,10 @@ import java.io.File;
 
 @Service
 @Log4j2
-@Getter
 public class YamlDeserializer {
 
-    public static DataSourceEntity externalConfig;
+    @Getter
+    private static DataSourceEntity externalConfig;
 
     private YamlDeserializer() {
 
