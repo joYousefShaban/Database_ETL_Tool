@@ -6,7 +6,7 @@ source:
   password: admin
   driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
   hikari:
-    connectionTimeout: 30000
+    connectionTimeout: 10000
     maximumPoolSize: 10
 
 # Destination database configuration
@@ -16,6 +16,6 @@ destination:
   password: admin
   driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
   hikari:
-    connectionTimeout: 30000
+    connectionTimeout: 10000
     maximumPoolSize: 10
 ...
