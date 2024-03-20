@@ -1,6 +1,7 @@
-package com.etl.tool.services.etl;
+package com.etl.tool.impl;
 
 import com.etl.tool.entities.DataRow;
+import com.etl.tool.mappers.IRowMappers;
 import com.etl.tool.mappers.IEntityMapper;
 import com.etl.tool.services.logging.ANSI;
 import lombok.extern.log4j.Log4j2;
@@ -12,10 +13,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @Service
 @Log4j2
@@ -37,16 +35,16 @@ public class ETLService extends ETLHelper implements IETLService {
     //<editor-fold desc="ETL Operations">
 
     //IMPORTANT: Consider multithreading this method for better performance
-    public void startTransfer(String sourceTableName, String destinationTableName, RowMapper<DataRow> rowMapper, IEntityMapper menuEntityMapper, Optional<String> sortFKColumn) {
-        log.info(ANSI.colour("DATA TRANSFORMATION from " + sourceTableName + " to " + destinationTableName + " HAS STARTED", ANSI.TEAL));
+    public void startTransfer(String destinationTableName, IRowMappers rowMappers, IEntityMapper entityMapper, Optional<String> sortFKColumn) {
+        log.info(ANSI.colour("DATA TRANSFORMATION from " + rowMappers.getSourceDatabaseName() + " to " + destinationTableName + " HAS STARTED", ANSI.TEAL));
 
         // Extract data from the source schema
-        List<DataRow> sourceTableData = extractData(sourceTableName, rowMapper);
+        HashMap<String, List<DataRow>> extractedData = extractData(rowMappers);
 
         //Exit if there's no data to transfer
-        if (!sourceTableData.isEmpty()) {
+        if (!extractedData.get(rowMappers.getSourceDatabaseName()).isEmpty()) {
             // Transform the data
-            List<DataRow> destinationTableData = transformData(sourceTableData, menuEntityMapper);
+            List<DataRow> destinationTableData = transformData(rowMappers.getSourceDatabaseName(), extractedData, entityMapper);
 
             //Sort a column if needed
             sortFKColumn.ifPresent(columnToCompare -> sortData(destinationTableData, columnToCompare));
@@ -54,36 +52,35 @@ public class ETLService extends ETLHelper implements IETLService {
             // Load the transformed data into the destination schema
             loadData(destinationTableName, destinationTableData);
         } else {
-            log.warn(ANSI.colour("There was no records found in: " + sourceTableName, ANSI.YELLOW_BRIGHT));
+            log.warn(ANSI.colour("There was no records found in: " + rowMappers.getSourceDatabaseName(), ANSI.YELLOW_BRIGHT));
         }
 
-        log.info(ANSI.colour("DATA TRANSFORMATION from " + sourceTableName + " to " + destinationTableName + "HAS FINISHED", ANSI.TEAL));
+        log.info(ANSI.colour("DATA TRANSFORMATION from " + rowMappers.getSourceDatabaseName() + " to " + destinationTableName + "HAS FINISHED", ANSI.TEAL));
     }
 
-    private List<DataRow> extractData(String sourceTableName, RowMapper<DataRow> rowMapper) {
+    private HashMap<String, List<DataRow>> extractData(IRowMappers rowMappers) {
+
+        HashMap<String, List<DataRow>> extracted = new HashMap<>();
         try {
-            return sourceJdbcTemplate.query("SELECT * FROM " + sourceTableName, rowMapper);
+            for (Map.Entry<String, RowMapper<DataRow>> rowMapper : rowMappers.getRowMappers().entrySet()) {
+                extracted.put(rowMapper.getKey(), sourceJdbcTemplate.query("SELECT * FROM " + rowMapper.getKey(), rowMapper.getValue()));
+            }
         } catch (Exception e) {
-            log.fatal(ANSI.colour("PROCESS OF EXTRACTING DATA: The select query on: \"" + sourceTableName + "\" failed, and generated the following exception: \r\n" + e.getMessage(), ANSI.RED_BOLD));
+            log.fatal(ANSI.colour("PROCESS OF EXTRACTING DATA ", ANSI.RED_BOLD) + ANSI.colour(": The select query on: \"" + rowMappers.getSourceDatabaseName() + "\" failed, and generated the following exception: \r\n" + e.getMessage(), ANSI.RED));
         }
-        return Collections.emptyList();
+
+        return extracted;
     }
 
-    private List<DataRow> transformData(List<DataRow> sourceRowData, IEntityMapper entityMapper) {
+    private List<DataRow> transformData(String sourceDatabaseName, HashMap<String, List<DataRow>> extractedData, IEntityMapper entityMapper) {
         List<DataRow> destinationRowData = new ArrayList<>();
 
-        for (DataRow sourceData : sourceRowData) {
-
+        for (DataRow sourceData : extractedData.get(sourceDatabaseName)) {
             try {
-                DataRow destinationData = entityMapper.transformToEntity((sourceData));
-
-                //This extra operation "destinationData.moveKeyToTheEnd("id");" could be easily avoided by changing entry order in entityMapper and ensuring id is the last element.
-
-                destinationRowData.add(destinationData);
+                destinationRowData.add(entityMapper.transformToEntity(sourceData, extractedData));
             } catch (Exception e) {
-                log.fatal(ANSI.colour("PROCESS OF TRANSFORMING DATA: The mapping of: \"" + sourceData.getData() + "\" failed, and generated the following exception: \r\n" + e.getMessage(), ANSI.RED_BOLD));
+                log.fatal(ANSI.colour("PROCESS OF TRANSFORMING DATA ", ANSI.RED_BOLD) + ANSI.colour(": The mapping of: \"" + sourceData.getData() + "\" failed, and generated the following exception: \r\n" + e.getMessage(), ANSI.RED));
             }
-
         }
         return destinationRowData;
     }
@@ -103,13 +100,13 @@ public class ETLService extends ETLHelper implements IETLService {
         setIdentityInsert(destinationTableName, true);
 
         //Update each entity, and insert of not exist
-        for (DataRow person : destinationData) {
+        for (DataRow destinationRow : destinationData) {
             try {
-                if (destinationJdbcTemplate.update(updateSQL, person.getData().values().toArray()) == 0) {
-                    destinationJdbcTemplate.update(insertSQL, person.getData().values().toArray());
+                if (destinationJdbcTemplate.update(updateSQL, destinationRow.getData().values().toArray()) == 0) {
+                    destinationJdbcTemplate.update(insertSQL, destinationRow.getData().values().toArray());
                 }
             } catch (Exception e) {
-                log.fatal(ANSI.colour("PROCESS OF LOADING DATA: The query on: \"" + destinationTableName + "\" failed, and generated the following exception: \r\n" + e.getMessage(), ANSI.RED_BOLD));
+                log.fatal(ANSI.colour("PROCESS OF LOADING DATA ", ANSI.RED_BOLD) + ANSI.colour(": The mapping of: \"" + destinationRow.getData() + "\" failed, and generated the following exception: \r\n" + e.getMessage(), ANSI.RED));
             }
         }
         //Disable insertion of Identity

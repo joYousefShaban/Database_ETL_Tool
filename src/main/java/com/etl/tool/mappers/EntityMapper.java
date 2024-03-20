@@ -2,7 +2,8 @@ package com.etl.tool.mappers;
 
 public abstract class EntityMapper implements IEntityMapper {
 
-    //The return type is object so that it'll be able to return null
+    //<editor-fold desc="Common Operation">
+    //To allow null returns, The return type will be always as an object
     public Object transferToLong(Object value) {
         return (value != null) ? ((Number) value).longValue() : null;
     }
@@ -14,4 +15,9 @@ public abstract class EntityMapper implements IEntityMapper {
     public Object transferToString(Object value) {
         return String.valueOf(value);
     }
+
+    public Object transferToBoolean(Object value) {
+        return (value != null) ? Boolean.valueOf(value.toString())  : null;
+    }
+    //</editor-fold>
 }

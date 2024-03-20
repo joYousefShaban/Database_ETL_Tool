@@ -1,13 +1,9 @@
-package com.etl.tool.impl;
+package com.etl.tool.ui;
 
 import com.etl.tool.configurations.JdbcTemplateConfig;
-import com.etl.tool.mappers.menu.MenuDatabaseRowMapper;
-import com.etl.tool.mappers.menu.MenuEntityMapper;
-import com.etl.tool.mappers.rank.RankDatabaseRowMapper;
-import com.etl.tool.mappers.rank.RankEntityMapper;
-import com.etl.tool.mappers.user.UserDatabaseRowMapper;
-import com.etl.tool.mappers.user.UserEntityMapper;
-import com.etl.tool.services.etl.ETLService;
+import com.etl.tool.impl.ETLService;
+import com.etl.tool.mappers.TEMPLATE.TemplateEntityMapper;
+import com.etl.tool.mappers.TEMPLATE.TemplateRowMapper;
 import com.etl.tool.services.logging.ANSI;
 import com.etl.tool.services.logging.LoggingService;
 import com.etl.tool.services.yaml_reader.YamlDeserializer;
@@ -55,15 +51,17 @@ public class Initializer {
             }
         } catch (Exception e) {
             log.fatal(ANSI.colour("INITIALIZATION FAILED, and threw the following exception: \r\n" + e.getMessage(), ANSI.RED_BOLD));
+            log.info(ANSI.colour("Please contact an administrator", ANSI.YELLOW_BOLD));
         } finally {
             log.info(ANSI.colour("Cleanup Starting...", ANSI.BLUE_BOLD));
         }
     }
 
     public static void startTransferringTables(ETLService dataTransferService) {
-        dataTransferService.startTransfer("dbo.AspNetUsers", "dbo.user_table", new UserDatabaseRowMapper(), new UserEntityMapper(), Optional.empty());
-        dataTransferService.startTransfer("dbo.Menu", "dbo.Menu", new MenuDatabaseRowMapper(), new MenuEntityMapper(), Optional.of("parent_id"));
-        dataTransferService.startTransfer("dbo.Ranks", "dbo.rank", new RankDatabaseRowMapper(), new RankEntityMapper(), Optional.empty());
+
+        dataTransferService.startTransfer("dbo.Menu", new TemplateRowMapper(), new TemplateEntityMapper(), Optional.empty());
+
+        //dataTransferService.startTransfer("dbo.XXXXX", new XXXXXX DatabaseRowMapper(), new XXXXXX EntityMapper(), Optional.empty());
         //Add more tables if needed
     }
 }
